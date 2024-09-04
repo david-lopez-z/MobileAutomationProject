@@ -1,4 +1,4 @@
-package com.automation.mobile.screens;
+package com.automation.mobile.screens.loginScreens;
 
 import com.automation.mobile.utils.screens.BaseScreen;
 import io.appium.java_client.android.AndroidDriver;
@@ -37,4 +37,43 @@ public class LoginScreen extends BaseScreen {
 
     @AndroidFindBy(accessibility = "button-LOGIN")
     WebElement loginBtn;
+
+    @AndroidFindBy(id = "android:id/titleDividerNoCustom")
+    WebElement loggedInTitle;
+
+    @AndroidFindBy(id="android:id/button1")
+    WebElement loggedInOkBtn;
+
+    public void typeIntoEmail(String text){
+        emailInput.sendKeys(text);
+    }
+
+    public void typeIntoPassword(String text){
+        passwordInput.sendKeys(text);
+    }
+
+    public void submitLoginBtn(){
+        loginBtn.click();
+    }
+
+    public void tapSignUpTab(){
+        signUpTab.click();
+    }
+
+    public void cleanScreen(){
+        emailInput.sendKeys("");
+        passwordInput.sendKeys("");
+    }
+
+    public void tapLoggedInOkBtn(){
+        loggedInOkBtn.click();
+    }
+
+    public WebElement getLoggedInOkBtn(){
+        return loggedInOkBtn;
+    }
+
+    public WebElement getLoggedInTitle(){
+        return loggedInTitle;
+    }
 }

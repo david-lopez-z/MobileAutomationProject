@@ -3,7 +3,10 @@
 <suite name = "io suite">
     <test name = "Mobile suite">
         <classes>
-            <class name="com.automation.mobile.tests.FirstTest"></class>
+            <class name="com.automation.mobile.tests.NavigationTest"></class>
+            <class name="com.automation.mobile.tests.LoginTest"></class>
+            <class name="com.automation.mobile.tests.SignUpTest"></class>
+            <class name="com.automation.mobile.tests.SwipeTest" ></class>
         </classes>
     </test>
 </suite>

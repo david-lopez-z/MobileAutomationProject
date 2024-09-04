@@ -1,13 +1,13 @@
 package com.automation.mobile.tests;
 
 import com.automation.mobile.screens.*;
+import com.automation.mobile.screens.loginScreens.LoginScreen;
 import com.automation.mobile.utils.tests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class FirstTest extends BaseTest {
-    private final int SCREEN_LOAD_TIME = 5;
+public class NavigationTest extends BaseTest {
 
     @BeforeMethod
     public void preconditions(){
