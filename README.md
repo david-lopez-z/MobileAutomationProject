@@ -13,6 +13,10 @@ To configure the Appium Inspector, use the following desired capabilities for an
 }
 ```
 
+#Important details:
+
+In order to be able to run the test all preconditions must be met, this implies that before running the test suit the app must be open and be on the home screen.
+
 AVD Details:
 - AVD Name: Small Phone API 35
 - Display Name: Small Phone API 35
